@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherly - Dynamic Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-cloud-sun"></i> Weatherly</h1>
+            <div class="search-container">
+                <input type="text" id="location-input" placeholder="Enter city name...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+                <button id="location-btn" title="Use my location"><i class="fas fa-location-arrow"></i></button>
+            </div>
+        </header>
+
+        <main>
+            <div class="current-weather">
+                <div class="weather-info">
+                    <h2 id="location">--</h2>
+                    <div class="current-temp" id="current-temp">--°C</div>
+                    <div class="weather-condition" id="weather-condition">--</div>
+                    <div class="weather-details">
+                        <div><i class="fas fa-temperature-high"></i> Feels like: <span id="feels-like">--°C</span></div>
+                        <div><i class="fas fa-wind"></i> Wind: <span id="wind">-- m/s</span></div>
+                        <div><i class="fas fa-tint"></i> Humidity: <span id="humidity">--%</span></div>
+                        <div><i class="fas fa-compress-alt"></i> Pressure: <span id="pressure">-- hPa</span></div>
+                    </div>
+                </div>
+                <div class="weather-icon" id="weather-icon">
+                    <i class="fas fa-sun"></i>
+                </div>
+            </div>
+
+            <div class="forecast">
+                <h3>4-Day Forecast</h3>
+                <div class="forecast-container" id="forecast-container">
+                    <!-- Forecast items will be added here by JavaScript -->
+                </div>
+            </div>
+        </main>
+
+        <div class="unit-toggle">
+            <button class="active" data-unit="metric">°C</button>
+            <button data-unit="imperial">°F</button>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Loading weather data...</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Powered by OpenWeatherMap API</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
