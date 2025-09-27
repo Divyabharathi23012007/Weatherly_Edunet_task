@@ -68,9 +68,8 @@ You can customize the application by modifying the following:
 - **Styling**: Modify the CSS to match your preferred design
 - **Features**: Extend the functionality by adding more weather data or features
 
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
+## Check out my project
+https://weatherly-edunet-task.vercel.app/
 
 ## Acknowledgments
 
